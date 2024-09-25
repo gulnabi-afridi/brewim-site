@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 600px) {
   .sliderContainer{
-    height: auto;
+    height: fit-content !important;
     padding: 50px 16px;
   }
   .sliderContainer{

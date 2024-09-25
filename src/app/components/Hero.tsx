@@ -10,22 +10,17 @@ import Dexscreener from "../../../public/home/dexscreener.svg";
 const Hero = () => {
   return (
     <div className={styles.heroMain}>
-      {/* top section */}
+      {/* Top section */}
       <div className={styles.hero}>
+        <div className={styles.gifBackground}>
+          <Image src='/home/364.gif' alt="Background GIF" layout="fill" objectFit="cover" />
+        </div>
         <nav className={styles.navbar}>
           <ul>
-            <li>
-              <a href="#">DISCOVER</a>
-            </li>
-            <li>
-              <a href="#">PROJECT</a>
-            </li>
-            <li>
-              <a href="#">COMMUNITY</a>
-            </li>
-            <li>
-              <a href="#">WTF</a>
-            </li>
+            <li><a href="#">DISCOVER</a></li>
+            <li><a href="#">PROJECT</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+            <li><a href="#">WTF</a></li>
           </ul>
         </nav>
         <div className={styles.logo}>
@@ -43,21 +38,17 @@ const Hero = () => {
             <Image src={Dexscreener} alt="DexScreener LOGO" />
           </div>
         </div>
-
         <div className={styles.overlay}></div>
-        <video autoPlay loop muted className={styles.backgroundVideo}>
-          <source src="/home/background.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </div>
-      {/* down section */}
+
+      {/* Down section */}
       <div className={styles.downSection}>
         <div className={styles.content}></div>
         <span className={styles.bottomRightTextTitle}>
           Thinking Memecoins Differently <br />
         </span>
         <span className={styles.bottomRightTextSubtitle}>
-          Babywen open the new era of <br />
+          Babywen opens the new era of <br />
           memecoins, an era with meaning and <br />
           fully inspired by web3 essence
         </span>
