@@ -9,12 +9,10 @@ import Dexscreener from "../../../public/home/dexscreener.svg";
 
 const Hero = () => {
   return (
-    <div className={styles.heroMain}>
+    <div className={` bg-[url('/home/364.gif')] bg-no-repeat bg-cover bg-fixed ${styles.heroMain}`}>
       {/* Top section */}
       <div className={styles.hero}>
-        <div className={styles.gifBackground}>
-          <Image src='/home/364.gif' alt="Background GIF" layout="fill" objectFit="cover" />
-        </div>
+   
         <nav className={styles.navbar}>
           <ul>
             <li><a href="#">DISCOVER</a></li>
@@ -38,7 +36,6 @@ const Hero = () => {
             <Image src={Dexscreener} alt="DexScreener LOGO" />
           </div>
         </div>
-        <div className={styles.overlay}></div>
       </div>
 
       {/* Down section */}

@@ -338,97 +338,30 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  height: 200vh; /* Keeping height for both sections */
-}
-
-.Hero_gifBackground__NEWPi {
-  position: absolute; /* Changed to absolute */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200vh; /* Cover both sections */
-  z-index: 0; /* Behind other content */
-  overflow: hidden; /* Prevent overflow */
+  height: 200vh; 
 }
 
 .Hero_hero__Pzcvw {
   position: relative;
-  height: 100vh; /* For first section */
+  height: 100vh; 
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  z-index: 1; /* Keep above the GIF */
+  z-index: 1; 
 }
 
 .Hero_downSection__qqp9N {
   color: white;
   z-index: 4;
   background-color: transparent;
-  min-height: 100vh; /* Ensure it takes the full height of the viewport */
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Hero_overlay__CYYSk {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200vh; /* Cover both sections */
-  z-index: 1;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1) 1px,
-    transparent 1px,
-    transparent 5px
-  );
-  backdrop-filter: blur(5px);
-}
-
-/* Rest of your existing CSS... */
-
-
-.Hero_hero__Pzcvw {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  z-index: 1; /* Keep above the GIF */
-}
-
-
-.Hero_downSection__qqp9N {
-  color: white;
-  z-index: 4;
-  background-color: transparent;
-  min-height: 100vh; /* Ensure it takes the full height of the viewport */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.Hero_backgroundVideo__s1Y9T {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200vh; /* Cover both sections */
-  object-fit: cover;
-  z-index: 0;
-}
-
-
-/*  */
 
 .Hero_navbar__5kwlx {
   position: absolute;
@@ -491,7 +424,6 @@
 }
 
 
-
 .Hero_content__vWJGE{
   width: 100%;
   max-width: fit-content;
@@ -516,7 +448,7 @@
 .Hero_initialContent__FvWd2 {
   position: relative;
   z-index: 2;
-  transition: opacity 1s ease-out; /* Transition fluide pour masquer */
+  transition: opacity 1s ease-out; 
 }
 
 .Hero_hide__FUzp2 {
@@ -554,7 +486,6 @@
   .Hero_downSection__qqp9N{
     padding: 20px 16px;
     min-height: auto;
-    background-color: black;
   }
   .Hero_navbar__5kwlx a {
     font-size: 14px !important;
@@ -575,9 +506,7 @@
   .Hero_overlay__CYYSk{
     height: 100%;
   }
-.Hero_backgroundVideo__s1Y9T{
-  height: 100%;
-}
+
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/Discover.module.css ***!

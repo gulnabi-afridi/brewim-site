@@ -599,17 +599,8 @@ video {
     max-width: 1536px;
   }
 }
-.absolute {
-  position: absolute;
-}
 .relative {
   position: relative;
-}
-.left-0 {
-  left: 0px;
-}
-.top-0 {
-  top: 0px;
 }
 .col-span-3 {
   grid-column: span 3 / span 3;
@@ -625,12 +616,6 @@ video {
 }
 .h-\[40px\] {
   height: 40px;
-}
-.h-\[200vh\] {
-  height: 200vh;
-}
-.h-\[100vh\] {
-  height: 100vh;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -685,6 +670,18 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.bg-\[url\(\'\/home\/364\.gif\'\)\] {
+  background-image: url('/home/364.gif');
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-fixed {
+  background-attachment: fixed;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 .px-4 {
   padding-left: 1rem;
