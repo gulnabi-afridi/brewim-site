@@ -1,0 +1,73 @@
+.sliderContainer {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.sliderContainer h2 {
+  font-family: "Cascadia Code", monospace;
+  color: #55a7ff;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: transparent;
+  color: black;
+  border-radius: 8px;
+  max-width: 300px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 250px;
+  border: solid black;
+  margin: 0 auto;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+
+
+/* for small screen  */
+
+
+@media screen and (max-width: 600px) {
+  .sliderContainer{
+    height: auto;
+    padding: 50px 16px;
+  }
+  .sliderContainer{
+    margin-bottom: 0px !important;
+  }
+  .sliderContainer{
+    gap: 20px;
+  }
+
+}

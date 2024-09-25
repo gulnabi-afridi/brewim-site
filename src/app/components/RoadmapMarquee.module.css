@@ -1,0 +1,37 @@
+.marqueeContainer {
+  overflow: hidden;
+  background-color: black;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative;
+  overflow: hidden;
+}
+
+.marqueeWrapper {
+  overflow: hidden;
+  flex: 1;
+  transform: rotate(-10deg); 
+}
+
+.marquee p {
+  color: white;
+  font-family: "VCR_OSD", monospace;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+
+/* for small screen  */
+
+
+@media screen and (max-width: 600px) {
+  .marqueeContainer{
+    height: 60px;
+  }
+  .marquee p {
+    font-size: 16px;
+  }
+  
+}
