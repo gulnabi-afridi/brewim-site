@@ -974,9 +974,12 @@
 
 
 @media screen and (max-width: 600px) {
+  .Roadmap_roadmap__kXACo{
+    min-height: fit-content !important;
+  }
   .Roadmap_sliderContainer__tij0s{
     height: fit-content !important;
-    padding: 50px 16px;
+    padding: 40px 16px;
     margin-bottom: 0px !important;
     gap: 20px;
   }
@@ -990,4 +993,13 @@
 }
 
 
+
+
+@media screen and (max-width: 600px) {
+  .footer_footer__woFMY{
+    min-height: auto !important;
+    padding: 30px 0px;
+  }
+
+}
 

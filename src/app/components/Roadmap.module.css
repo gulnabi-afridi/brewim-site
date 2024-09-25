@@ -59,9 +59,12 @@
 
 
 @media screen and (max-width: 600px) {
+  .roadmap{
+    min-height: fit-content !important;
+  }
   .sliderContainer{
     height: fit-content !important;
-    padding: 50px 16px;
+    padding: 40px 16px;
   }
   .sliderContainer{
     margin-bottom: 0px !important;

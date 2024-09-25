@@ -30,7 +30,7 @@ const Roadmap = () => {
   };
 
   return (
-    <div className="w-full min-h-screen justify-center items-center">
+    <div className={`w-full min-h-screen justify-center items-center ${styles.roadmap}`}>
     <div className={styles.sliderContainer}>
       <Slider {...settings}>
         <div className={styles.card}>
