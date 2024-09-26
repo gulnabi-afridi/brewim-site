@@ -605,6 +605,12 @@ video {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .flex {
   display: flex;
 }
@@ -638,12 +644,6 @@ video {
 .max-w-\[650px\] {
   max-width: 650px;
 }
-.max-w-\[400px\] {
-  max-width: 400px;
-}
-.max-w-\[700px\] {
-  max-width: 700px;
-}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -658,9 +658,6 @@ video {
 }
 .flex-col {
   flex-direction: column;
-}
-.items-start {
-  align-items: flex-start;
 }
 .items-center {
   align-items: center;
@@ -680,26 +677,14 @@ video {
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-3 {
+  gap: 0.75rem;
+}
 .gap-5 {
   gap: 1.25rem;
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-4 {
-  gap: 1rem;
-}
-.gap-3 {
-  gap: 0.75rem;
-}
-.overflow-visible {
-  overflow: visible;
-}
-.whitespace-normal {
-  white-space: normal;
-}
-.whitespace-nowrap {
-  white-space: nowrap;
 }
 .break-words {
   overflow-wrap: break-word;
@@ -720,17 +705,47 @@ video {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.text-\[14px\] {
-  font-size: 14px;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-\[7px\] {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.px-\[9px\] {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.px-\[0px\] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-\[16px\] {
+  font-size: 16px;
 }
 .text-\[18px\] {
   font-size: 18px;
 }
 .text-\[20px\] {
   font-size: 20px;
-}
-.text-\[16px\] {
-  font-size: 16px;
 }
 .font-normal {
   font-weight: 400;
@@ -741,39 +756,20 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
-.leading-\[40px\] {
-  line-height: 40px;
-}
-.leading-\[50px\] {
-  line-height: 50px;
-}
-.leading-\[60px\] {
-  line-height: 60px;
-}
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[\] {
-  color: ;
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 .text-\[\#1f97dd\] {
   --tw-text-opacity: 1;
   color: rgb(31 151 221 / var(--tw-text-opacity));
 }
-.text-black\/80 {
-  color: rgb(0 0 0 / 0.8);
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .text-black\/70 {
   color: rgb(0 0 0 / 0.7);
-}
-.\!text-white {
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 .transition-all {
   transition-property: all;
@@ -782,9 +778,6 @@ video {
 }
 .duration-300 {
   transition-duration: 300ms;
-}
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :root {
@@ -837,12 +830,6 @@ html {
   font-style: normal;
 }
 
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -850,6 +837,10 @@ html {
 }
 
 @media (min-width: 640px) {
+
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
 
   .sm\:h-\[170px\] {
     height: 170px;
@@ -878,13 +869,13 @@ html {
   .sm\:text-\[30px\] {
     font-size: 30px;
   }
-
-  .sm\:leading-none {
-    line-height: 1;
-  }
 }
 
 @media (min-width: 768px) {
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
 
   .md\:flex {
     display: flex;
@@ -912,6 +903,20 @@ html {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:text-\[25px\] {

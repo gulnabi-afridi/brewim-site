@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="w-full xl:px-0 px-4 flex justify-center items-center">
+    <div className="w-full min-h-screen md:pb-0 pb-6 xl:px-0 px-4 flex flex-col justify-center items-center">
       <div
-        className={`w-full max-w-[1100px] gap-5 sm:gap-8 min-h-screen flex flex-col justify-center items-center ${styles.footer}`}
+        className={`w-full max-w-[1100px] gap-5 sm:gap-8 flex flex-col justify-center items-center ${styles.footer}`}
       >
         {/* top section */}
         <div className="w-full flex justify-between items-center gap-8">
@@ -45,11 +45,12 @@ const Footer = () => {
             <Image src="/home/billy.gif" fill alt="" />
           </div>
         </div>
-        <p className="text-[16px] w-full font-normal text-black/70 break-words">
+
+ 
+      </div>
+      <p className="text-[16px] mt-5 sm:mt-6 md:mt-8 w-full md:px-4 px-[0px] text-center font-normal text-black/70 break-words">
     xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxxoxoxoxoxoxoxoxoxoxoxox<span className="text-[#1f97dd]">total_supply=100_000_000</span>oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo<span className="text-[#1f97dd]">chain=sol</span>xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo<span className="text-[#1f97dd]">liquidity=burned</span>xoxoxoxoxoxoxoxoxoxoxoxox<span className="text-[#1f97dd]">dev=out</span>oxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxox
 </p>
-
-      </div>
     </div>
   );
 };
