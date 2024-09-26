@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 import styles from "./RoadmapMarquee.module.css";
 
 const RoadmapMarquee = () => {
-
   const [marqueeSpeed, setMarqueeSpeed] = useState(130);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ const RoadmapMarquee = () => {
 
     // Add resize event listener
     window.addEventListener("resize", handleResize);
-    
+
     // Cleanup event listener on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -33,14 +32,12 @@ const RoadmapMarquee = () => {
           direction="left"
           className={styles.marquee}
         >
-          <p>Roadmap&nbsp; &nbsp;</p>
-          <p>Roadmap&nbsp; &nbsp;</p>
-          <p>Roadmap&nbsp; &nbsp;</p>
-          <p>Roadmap&nbsp; &nbsp;</p>
-          <p>Roadmap&nbsp; &nbsp;</p>
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
+            return <p>Roadmap&nbsp; &nbsp;</p>;
+          })}
         </Marquee>
       </div>
-      <div className={styles.marqueeWrapper}>
+      <div className={`md:flex hidden ${styles.marqueeWrapper}`}>
         <Marquee
           gradient={false}
           speed={marqueeSpeed}
@@ -54,7 +51,7 @@ const RoadmapMarquee = () => {
           <p>Roadmap&nbsp; &nbsp;</p>
         </Marquee>
       </div>
-      <div className={styles.marqueeWrapper}>
+      <div className={`md:flex hidden ${styles.marqueeWrapper}`}>
         <Marquee
           gradient={false}
           speed={marqueeSpeed}

@@ -513,21 +513,21 @@
   \**********************************************************************************************************************************************************************************************************************************************************************************/
 .Discover_content__y3jP7 {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding: 50px 0;
   background-color: black;
   flex-direction: column;
-  color: white;
+  color: black;
   gap: 20px;
   height: 100vh;
   font-family: "VCR_OSD", monospace;
-
-
 }
 
 .Discover_section__xh5q0 {
   background-color: black;
+  family: "Cascadia Code", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -540,29 +540,27 @@
   display: contents;
 }
 
-.Discover_mainText__gj1BX {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 12px;
-  max-width: 600px;
-  line-height: 35px;
-}
 
 .Discover_text1__juOwy {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 20px;
-
-
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .Discover_titleP1__NDFj2 {
   color: #1f97dd !important;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.Discover_spanText___V_5u{
+  line-height: 20px;
+
 }
 
 .Discover_surroundingText__REtM9 {
@@ -571,6 +569,8 @@
   text-align: justify;
   max-width: 540px;
   text-align: center;
+  margin-top: 8px;
+  color: white;
 }
 
 .Discover_exploreLink__YRnoF {
@@ -588,6 +588,14 @@
   text-decoration: underline;
 }
 
+.Discover_pixelTitle__ShHjn {
+  font-family: "VCR_OSD", monospace;
+}
+
+.Discover_discoverSubtitle__7ioUP {
+  font-family: "VCR_OSD", monospace;
+}
+
 
 
 /* for small screen  */
@@ -600,13 +608,35 @@
   }
 .Discover_titleP1__NDFj2{
   font-size: 30px;
+  line-height: 10px;
+}
+.Discover_spanText___V_5u{
+  line-height: 10px;
 }
 .Discover_text1__juOwy{
    font-size: 16px;
+   line-height: 16px;
 }
 .Discover_surroundingText__REtM9{
 
   font-size: 14px;;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+.Discover_titleP1__NDFj2{
+  line-height: 15px;
+}
+.Discover_spanText___V_5u{
+  line-height: 56px !important;
+}
+.Discover_surroundingText__REtM9{
+  text-align: left;
+  margin-top: 0px;
+}
+.Discover_content__y3jP7{
+  gap: 10px;
 }
 
 }
@@ -795,27 +825,27 @@
   display: contents;
 }
 
-.Project_mainText__f0riN {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 12px;
-  max-width: 600px;
-  line-height: 35px;
-}
 
 .Project_text1__s7Axz {
   color: black;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .Project_titleP1__H9bJ5 {
   color: #1f97dd !important;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.Project_spanText__LolDb{
+  line-height: 20px;
+
 }
 
 .Project_surroundingText__rls27 {
@@ -824,6 +854,8 @@
   text-align: justify;
   max-width: 540px;
   text-align: center;
+  margin-top: 8px;
+  color: black;
 }
 
 .Project_exploreLink__1bW1f {
@@ -861,13 +893,35 @@
   }
 .Project_titleP1__H9bJ5{
   font-size: 30px;
+  line-height: 10px;
+}
+.Project_spanText__LolDb{
+  line-height: 10px;
 }
 .Project_text1__s7Axz{
    font-size: 16px;
+   line-height: 16px;
 }
 .Project_surroundingText__rls27{
 
   font-size: 14px;;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+.Project_titleP1__H9bJ5{
+  line-height: 15px;
+}
+.Project_spanText__LolDb{
+  line-height: 56px !important;
+}
+.Project_surroundingText__rls27{
+  text-align: left;
+  margin-top: 0px;
+}
+.Project_content__zcmS9{
+  gap: 10px;
 }
 
 }
@@ -910,6 +964,17 @@
   }
   
 }
+
+
+@media screen and (max-width: 768px) {
+  .RoadmapMarquee_marqueeWrapper__ioqen {
+    transform: rotate(0); 
+  }
+  
+  
+}
+
+
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/Roadmap.module.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************/

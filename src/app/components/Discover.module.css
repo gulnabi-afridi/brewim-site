@@ -1,20 +1,20 @@
 .content {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding: 50px 0;
   background-color: black;
   flex-direction: column;
-  color: white;
+  color: black;
   gap: 20px;
   height: 100vh;
   font-family: "VCR_OSD", monospace;
-
-
 }
 
 .section {
   background-color: black;
+  family: "Cascadia Code", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,29 +27,27 @@
   display: contents;
 }
 
-.mainText {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 12px;
-  max-width: 600px;
-  line-height: 35px;
-}
 
 .text1 {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 20px;
-
-
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 
 .titleP1 {
   color: #1f97dd !important;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.spanText{
+  line-height: 20px;
+
 }
 
 .surroundingText {
@@ -58,6 +56,8 @@
   text-align: justify;
   max-width: 540px;
   text-align: center;
+  margin-top: 8px;
+  color: white;
 }
 
 .exploreLink {
@@ -75,6 +75,14 @@
   text-decoration: underline;
 }
 
+.pixelTitle {
+  font-family: "VCR_OSD", monospace;
+}
+
+.discoverSubtitle {
+  font-family: "VCR_OSD", monospace;
+}
+
 
 
 /* for small screen  */
@@ -87,13 +95,35 @@
   }
 .titleP1{
   font-size: 30px;
+  line-height: 10px;
+}
+.spanText{
+  line-height: 10px;
 }
 .text1{
    font-size: 16px;
+   line-height: 16px;
 }
 .surroundingText{
 
   font-size: 14px;;
+}
+
+}
+
+@media screen and (max-width: 420px) {
+.titleP1{
+  line-height: 15px;
+}
+.spanText{
+  line-height: 56px !important;
+}
+.surroundingText{
+  text-align: left;
+  margin-top: 0px;
+}
+.content{
+  gap: 10px;
 }
 
 }
